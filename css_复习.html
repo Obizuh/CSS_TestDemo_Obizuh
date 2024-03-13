@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css复习</title>
+  <style>
+    /* css的注释也与html不相同 */
+    p {
+      font: size 90px;
+      color: blueviolet;
+    }
+
+    /* 类选择器 */
+    .div {
+      color: blue;
+    }
+
+    .size {
+      font-size: larger;
+    }
+
+    /* id选择器 */
+    #div {
+      font-size: 100px;
+      color: rgba(92, 213, 110, 0.718);
+    }
+
+    /* 通配符选择器，为所有标签提供样式 */
+    * {
+      font-size: 40px;
+      color: fuchsia;
+    }
+
+    /* 画盒子,使用的是类选择器 */
+    .red {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+    }
+
+    .green {
+      background-color: green;
+      width: 200px;
+      height: 200px;
+    }
+
+    .weight {
+      font-weight: 200;
+    }
+
+    .font {
+      font-style: italic;
+    }
+
+    .high {
+      line-height: 50px;
+    }
+
+    #high {
+      line-height: 50px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <p>复习css</p>
+  <p>验证通配符选择器</p>
+  <p>再次验证通配符选择器</p>
+  <div class="div size">
+    这是一个div容器，该容器将一些其他HTML元素组合在一起，以便进行样式化和布局。
+  </div>
+  <strong style="font-size: 50px; color: navajowhite;">行内引用css方式</strong>
+  <div id="div high">这是一个id选择器的测试div样例</div>
+  <div class="red high">div1</div>
+  <div class="green">div2</div>
+  <p class="weight font">字体是否加粗+倾斜</p>
+</body>
+
+</html>

@@ -2,4 +2,12 @@
 /* 选择器 { CSS属性  } */
 p{
   color:red;
+  font: size 50px;
+}
+strong{
+  color:darkorange;
+  font-size: 100px;
+}
+#div{
+  color: aliceblue;
 }
