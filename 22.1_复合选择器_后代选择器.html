@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>后代选择器</title>
+  <style>
+    div span{
+      color:red;
+    }
+    /* 后代选择器会选中所有后代，包括儿子、孙子、重孙子..... */
+  </style>
+</head>
+<body>
+  <span>测试文字1</span>
+  <div>
+    <span>儿子span</span>
+    <p>
+      <span>孙子span</span>
+    </p>
+  </div>
+</body>
+</html>
