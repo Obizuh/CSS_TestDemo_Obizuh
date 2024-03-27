@@ -5,18 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS特性_层叠性</title>
   <style>
-    /* 相同的属性会覆盖，不同的会叠加 */
-    div{
-      color:green;
-      font-size:30px;
-    }
     div{
       color:red;
-      line-height: 40px;
     }
-</style>
+    .box{
+      color:green;
+    }
+  </style>
 </head>
 <body>
-  <div>测试文字</div>
+  <div class="box">测试文字</div>
 </body>
 </html>
