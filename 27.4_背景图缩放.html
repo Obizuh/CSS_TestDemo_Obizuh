@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>背景图缩放</title>
+  <style>
+    div{
+      width: 500px;
+      height: 500px;
+      background-color: pink;
+      background-image: url(./images/sheep.png);
+      background-repeat: no-repeat;
+      /* background-size: cover;完全覆盖背景区，可能使部分背景图部分看不见 */
+      /* background-size: contain; 完全装入背景区，可能背景图部分白色*/
+      background-size: 80%;
+    }
+  </style>
+</head>
+<body>
+  <div>测试文字</div>
+</body>
+</html>

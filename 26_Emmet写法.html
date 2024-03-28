@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emmet写法</title>
+  <style>
+    .box{
+      color:red;
+    }
+    /* 大多数简写方式为属性单词的首字母 */
+    div{
+      /* w500 */
+      width: 500px;
+      /* h22 */
+      height: 22px;
+      height: 30px;
+      background-color: red;
+      /* w500+h200+bgc */
+      width: 500px;
+      height: 200px;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 直接写.box就可以生成 -->
+  <div class="box"></div>
+  <!-- p.box -->
+  <p class="box"></p>
+  <!-- p#box -->
+  <p id="box"></p>
+
+  <!-- div+p -->
+  <div></div>
+  <p></p>
+
+  <!-- div>p -->
+  <div>
+    <p></p>
+  </div>
+
+  <!-- span*3 -->
+  <span></span><span></span><span></span>
+
+  <!-- div{111111} -->
+  <div>111111</div>
+</body>
+</html>
