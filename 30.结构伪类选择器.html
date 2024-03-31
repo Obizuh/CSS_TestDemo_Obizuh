@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>结构伪类选择器</title>
+  <style>
+    *{
+      list-style: none;
+    }
+    li:first-child{
+      background-color: green;
+    }
+    li:last-child{
+      background-color: azure;
+    }
+    li:nth-child(3){
+      background-color: red;
+    }
+    li:nth-child(2n){
+      background-color: brown;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>第一个元素</li>
+    <li>第二个元素</li>
+    <li>第三个元素</li>
+    <li>第四个元素</li>
+    <li>第五个元素</li>
+  </ul>
+</body>
+</html>

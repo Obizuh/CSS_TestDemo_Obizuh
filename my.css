@@ -11,3 +11,8 @@ strong{
 #div{
   color: aliceblue;
 }
+.bg{
+  background-color: pink;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+}

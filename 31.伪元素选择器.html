@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>伪元素选择器</title>
+  <style>
+    /* 必须设置content:""属性，用来拜访装饰性的内容 */
+    div::before{
+      content: "前置文字";
+      color: red;
+    }
+    div::after{
+      content: url('./images/sheep.png'); 
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span>span文字</span>
+  </div>
+</body>
+</html>
