@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>清除默认样式</title>
+  <style>
+    *{
+      /* 内减模式 */
+      margin: 0;
+      padding: 0;
+    }
+    li{
+      /* 去除列表的项目符号 */
+      list-style: none;
+    }
+    div{
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div>测试文字</div>
+  <div><ul>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+  </ul></div>
+</body>
+</html>

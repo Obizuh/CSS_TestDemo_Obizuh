@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盒子模型-圆角</title>
+  <style>
+    .div {
+      width: 300px;
+      height: 300px;
+      background-color: pink;
+      border-radius: 10px;
+      margin: auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    /* 多值写法：从左上角顺时针赋值，没有取值的角与对角取值相同*/
+    p{
+      width: 500px;
+      height: 500px;
+      background-color: pink;
+      /* border-radius: 10px 20px 40px 80px;四值写法 */
+      /* border-radius: 10px 80px;二值写法 */
+    }
+    .div_circle{
+      /* 正圆形状 */
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .div_capsule{
+      /* 胶囊形状 */
+      width: 200px;
+      height: 80px;
+      background-color: azure;
+      border-radius: 40px;
+      text-align: center;
+      line-height: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div">测试文字</div>
+  <p>多值写法测试文字</p>
+  <img src="./images/sheep.png" alt="这是一个懒羊羊" class="div_circle">
+  <div class="div_capsule">胶囊形状</div>
+</body>
+
+</html>

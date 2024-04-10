@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>元素溢出</title>
+  <style>
+    .div_1{
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      /* 溢出才显示滚动条位置 */
+      overflow: auto;
+      margin: 20px;
+    }
+    .div_2{
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      /* 无论是否溢出，都显示滚动条 */
+      overflow: scroll;
+      margin: 20px;
+    }
+    .div_3{
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      /* 溢出的部分隐藏掉 */
+      overflow: hidden;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="div_1">测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字</div>
+  <div class="div_2">测试文字</div>
+  <div class="div_3">测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字</div>
+</body>
+</html>
