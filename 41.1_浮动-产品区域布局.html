@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品区域布局</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .product {
+      width: 1226px;
+      height: 628px;
+      background-color: pink;
+      margin: 20px auto;
+    }
+
+    .left {
+      float: left;
+      width: 234px;
+      height: 628px;
+      background-color: blue;
+    }
+
+    .right {
+      float: right;
+      width: 978px;
+      height: 628px;
+      background-color: orange;
+    }
+
+    .right li {
+      float: left;
+      margin-right: 14px;
+      margin-bottom: 14px;
+      width: 234px;
+      height: 300px;
+      background-color: brown;
+    }
+    /* 第四个和第八个li去掉右侧的margin */
+    .right li:nth-child(4n) {
+      margin-right: 0;
+    }
+    /* 细节：如果父级宽度不够，浮动的盒子会掉下来 */
+  </style>
+</head>
+
+<body>
+  <!-- 版心：左右，右面：8个产品->8个li -->
+  <!-- 在大盒子里面塞小盒子，小盒子用浮动来保持在一行内 -->
+  <div class="product">
+    <div class="left"></div>
+    <div class="right">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
