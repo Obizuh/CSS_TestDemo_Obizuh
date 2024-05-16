@@ -8,12 +8,13 @@
     /* 在默认情况下，主轴方向尺寸是靠内容撑开，侧轴默认拉伸 */
     .box{
       display: flex;
+      flex-direction: column;
       height: 300px;
       border: 1px solid #000;
     }
 
     .box div{
-      height: 100px;
+      /* height: 100px; */
       background-color: pink;
     }
 
@@ -22,10 +23,11 @@
     }
 
     .box div:nth-child(2){
+      /* flex弹性伸缩比占用的是盒子剩余的尺寸 */
       flex: 1;
     }
     .box div:nth-child(3){
-      flex: 1;
+      flex: 2;
     }
   </style>
 </head>
